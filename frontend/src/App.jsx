@@ -15,7 +15,7 @@ function App() {
     setResult(null);
 
     try {
-      const res = await fetch('http://localhost:3001/api/research', {
+      const res = await fetch('https://ai-investment-research-agent-17ky.onrender.com/api/research', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ companyName })
